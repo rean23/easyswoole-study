@@ -1,0 +1,128 @@
+[2019-08-15 15:05:50][DEBUG][ERROR] : [Uncaught Error: Class 'EasySwoole\EasySwoole\HotReload' not found in /mnt/hgfs/share/easyswoole/EasySwooleEvent.php:30
+Stack trace:
+#0 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#1 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#2 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#3 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#4 /mnt/hgfs/share/easyswoole/easyswoole(24): EasySwoole\EasySwoole\Command\CommandRunner->run(Array)
+#5 {main}
+  thrown at file:/mnt/hgfs/share/easyswoole/EasySwooleEvent.php line:30]
+[2019-08-15 15:06:01][DEBUG][ERROR] : [Uncaught Error: Class 'EasySwoole\EasySwoole\HotReload' not found in /mnt/hgfs/share/easyswoole/EasySwooleEvent.php:30
+Stack trace:
+#0 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#1 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#2 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#3 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#4 /mnt/hgfs/share/easyswoole/easyswoole(24): EasySwoole\EasySwoole\Command\CommandRunner->run(Array)
+#5 {main}
+  thrown at file:/mnt/hgfs/share/easyswoole/EasySwooleEvent.php line:30]
+[2019-08-15 15:06:14][DEBUG][ERROR] : [Uncaught Error: Class 'EasySwoole\EasySwoole\HotReload' not found in /mnt/hgfs/share/easyswoole/EasySwooleEvent.php:30
+Stack trace:
+#0 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#1 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#2 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#3 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#4 /mnt/hgfs/share/easyswoole/easyswoole(24): EasySwoole\EasySwoole\Command\CommandRunner->run(Array)
+#5 {main}
+  thrown at file:/mnt/hgfs/share/easyswoole/EasySwooleEvent.php line:30]
+[2019-08-15 15:06:26][DEBUG][ERROR] : [Uncaught Error: Class 'EasySwoole\EasySwoole\HotReload' not found in /mnt/hgfs/share/easyswoole/EasySwooleEvent.php:30
+Stack trace:
+#0 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#1 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#2 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#3 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#4 /mnt/hgfs/share/easyswoole/easyswoole(24): EasySwoole\EasySwoole\Command\CommandRunner->run(Array)
+#5 {main}
+  thrown at file:/mnt/hgfs/share/easyswoole/EasySwooleEvent.php line:30]
+[2019-08-15 16:50:34][DEBUG][ERROR] : [Argument 1 passed to EasySwoole\Http\Response::write() must be of the type string, null given, called in /mnt/hgfs/share/easyswoole/App/HttpController/Index.php on line 20 at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/http/src/Response.php line:76]
+[2019-08-15 16:51:03][DEBUG][ERROR] : [Argument 1 passed to EasySwoole\Http\Response::write() must be of the type string, null given, called in /mnt/hgfs/share/easyswoole/App/HttpController/Index.php on line 20 at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/http/src/Response.php line:76]
+[2019-08-15 16:51:49][DEBUG][ERROR] : [Argument 1 passed to EasySwoole\Http\Response::write() must be of the type string, null given, called in /mnt/hgfs/share/easyswoole/App/HttpController/Index.php on line 20 at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/http/src/Response.php line:76]
+[2019-08-15 16:52:34][DEBUG][ERROR] : [Argument 1 passed to EasySwoole\Http\Response::write() must be of the type string, null given, called in /mnt/hgfs/share/easyswoole/App/HttpController/Index.php on line 20 at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/http/src/Response.php line:76]
+[2019-08-15 16:52:35][DEBUG][ERROR] : [Argument 1 passed to EasySwoole\Http\Response::write() must be of the type string, null given, called in /mnt/hgfs/share/easyswoole/App/HttpController/Index.php on line 20 at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/http/src/Response.php line:76]
+[2019-08-15 16:53:46][DEBUG][ERROR] : [Argument 1 passed to EasySwoole\Http\Response::write() must be of the type string, null given, called in /mnt/hgfs/share/easyswoole/App/HttpController/Index.php on line 18 at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/http/src/Response.php line:76]
+[2019-08-15 16:55:54][DEBUG][ERROR] : [Argument 1 passed to EasySwoole\Http\Response::write() must be of the type string, null given, called in /mnt/hgfs/share/easyswoole/App/HttpController/Index.php on line 18 at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/http/src/Response.php line:76]
+[2019-08-15 16:55:55][DEBUG][ERROR] : [Argument 1 passed to EasySwoole\Http\Response::write() must be of the type string, null given, called in /mnt/hgfs/share/easyswoole/App/HttpController/Index.php on line 18 at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/http/src/Response.php line:76]
+[2019-08-15 17:18:58][DEBUG][NOTICE] : [Undefined index: PORT at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:18:58][DEBUG][NOTICE] : [Undefined index: SERVER_TYPE at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:18:58][DEBUG][NOTICE] : [Undefined index: LISTEN_ADDRESS at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:18:58][DEBUG][NOTICE] : [Undefined index: RUN_MODEL at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:18:58][DEBUG][NOTICE] : [Undefined index: SOCK_TYPE at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:18:58][DEBUG][ERROR] : ["unknown server type :{$type}" at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php line:69]
+[2019-08-15 17:18:58][DEBUG][NOTICE] : [Undefined index: SERVER_TYPE at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:117]
+[2019-08-15 17:18:58][DEBUG][ERROR] : [Uncaught TypeError: Argument 1 passed to EasySwoole\EasySwoole\Core::registerDefaultCallBack() must be an instance of Swoole\Server, null given, called in /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php on line 117 and defined in /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php:217
+Stack trace:
+#0 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(117): EasySwoole\EasySwoole\Core->registerDefaultCallBack(NULL, NULL)
+#1 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#2 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#3 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#4 /mnt/hgfs/share/easyswoole/easyswoole(24): EasySwoole\EasySwoole\Command\C at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:217]
+[2019-08-15 17:19:38][DEBUG][NOTICE] : [Undefined index: PORT at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:19:38][DEBUG][NOTICE] : [Undefined index: SERVER_TYPE at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:19:38][DEBUG][NOTICE] : [Undefined index: LISTEN_ADDRESS at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:19:38][DEBUG][NOTICE] : [Undefined index: RUN_MODEL at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:19:38][DEBUG][NOTICE] : [Undefined index: SOCK_TYPE at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:19:38][DEBUG][ERROR] : ["unknown server type :{$type}" at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php line:69]
+[2019-08-15 17:19:38][DEBUG][NOTICE] : [Undefined index: SERVER_TYPE at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:117]
+[2019-08-15 17:19:38][DEBUG][ERROR] : [Uncaught TypeError: Argument 1 passed to EasySwoole\EasySwoole\Core::registerDefaultCallBack() must be an instance of Swoole\Server, null given, called in /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php on line 117 and defined in /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php:217
+Stack trace:
+#0 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(117): EasySwoole\EasySwoole\Core->registerDefaultCallBack(NULL, NULL)
+#1 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#2 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#3 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#4 /mnt/hgfs/share/easyswoole/easyswoole(24): EasySwoole\EasySwoole\Command\C at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:217]
+[2019-08-15 17:19:50][DEBUG][ERROR] : [Uncaught Swoole\Exception: failed to listen server port[0.0.0.0:9501], Error: Address already in use[98] in /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php:57
+Stack trace:
+#0 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(57): Swoole\Server->__construct('0.0.0.0', 9501, 2, 1)
+#1 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(115): EasySwoole\EasySwoole\ServerManager->createSwooleServer(9501, 2, '0.0.0.0', Array, 2, 1)
+#2 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /mnt/hgfs/share/easyswoole/easyswoole(24): EasyS at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php line:57]
+[2019-08-15 17:20:18][DEBUG][NOTICE] : [Undefined index: PORT at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:20:18][DEBUG][NOTICE] : [Undefined index: SERVER_TYPE at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:20:18][DEBUG][NOTICE] : [Undefined index: LISTEN_ADDRESS at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:20:18][DEBUG][NOTICE] : [Undefined index: RUN_MODEL at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:20:18][DEBUG][NOTICE] : [Undefined index: SOCK_TYPE at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:20:18][DEBUG][ERROR] : ["unknown server type :{$type}" at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php line:69]
+[2019-08-15 17:20:18][DEBUG][NOTICE] : [Undefined index: SERVER_TYPE at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:117]
+[2019-08-15 17:20:18][DEBUG][ERROR] : [Uncaught TypeError: Argument 1 passed to EasySwoole\EasySwoole\Core::registerDefaultCallBack() must be an instance of Swoole\Server, null given, called in /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php on line 117 and defined in /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php:217
+Stack trace:
+#0 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(117): EasySwoole\EasySwoole\Core->registerDefaultCallBack(NULL, NULL)
+#1 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#2 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#3 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#4 /mnt/hgfs/share/easyswoole/easyswoole(24): EasySwoole\EasySwoole\Command\C at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:217]
+[2019-08-15 17:22:29][DEBUG][NOTICE] : [Undefined index: PORT at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:22:29][DEBUG][NOTICE] : [Undefined index: SERVER_TYPE at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:22:29][DEBUG][NOTICE] : [Undefined index: LISTEN_ADDRESS at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:22:29][DEBUG][NOTICE] : [Undefined index: RUN_MODEL at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:22:29][DEBUG][NOTICE] : [Undefined index: SOCK_TYPE at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:22:29][DEBUG][ERROR] : ["unknown server type :{$type}" at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php line:69]
+[2019-08-15 17:22:29][DEBUG][NOTICE] : [Undefined index: SERVER_TYPE at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:117]
+[2019-08-15 17:22:29][DEBUG][ERROR] : [Uncaught TypeError: Argument 1 passed to EasySwoole\EasySwoole\Core::registerDefaultCallBack() must be an instance of Swoole\Server, null given, called in /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php on line 117 and defined in /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php:217
+Stack trace:
+#0 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(117): EasySwoole\EasySwoole\Core->registerDefaultCallBack(NULL, NULL)
+#1 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#2 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#3 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#4 /mnt/hgfs/share/easyswoole/easyswoole(24): EasySwoole\EasySwoole\Command\C at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:217]
+[2019-08-15 17:28:00][DEBUG][NOTICE] : [Undefined index: PORT at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:28:00][DEBUG][NOTICE] : [Undefined index: SERVER_TYPE at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:28:00][DEBUG][NOTICE] : [Undefined index: LISTEN_ADDRESS at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:28:00][DEBUG][NOTICE] : [Undefined index: RUN_MODEL at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:28:00][DEBUG][NOTICE] : [Undefined index: SOCK_TYPE at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:115]
+[2019-08-15 17:28:00][DEBUG][ERROR] : ["unknown server type :{$type}" at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php line:69]
+[2019-08-15 17:28:00][DEBUG][NOTICE] : [Undefined index: SERVER_TYPE at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:117]
+[2019-08-15 17:28:00][DEBUG][ERROR] : [Uncaught TypeError: Argument 1 passed to EasySwoole\EasySwoole\Core::registerDefaultCallBack() must be an instance of Swoole\Server, null given, called in /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php on line 117 and defined in /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php:217
+Stack trace:
+#0 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(117): EasySwoole\EasySwoole\Core->registerDefaultCallBack(NULL, NULL)
+#1 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#2 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#3 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#4 /mnt/hgfs/share/easyswoole/easyswoole(24): EasySwoole\EasySwoole\Command\C at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php line:217]
+[2019-08-15 17:38:18][DEBUG][WARNING] : [require(/mnt/hgfs/share/easyswoole/App/Config): failed to open stream: Success at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Config.php line:97]
+[2019-08-15 17:38:18][DEBUG][ERROR] : [require(): Failed opening required '/mnt/hgfs/share/easyswoole/App/Config' (include_path='.:/usr/share/php') at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Config.php line:97]
+[2019-08-15 17:41:11][DEBUG][WARNING] : [Invalid argument supplied for foreach() at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php line:84]
+[2019-08-15 17:41:13][DEBUG][ERROR] : [Call to a member function getConf() on null at file:/mnt/hgfs/share/easyswoole/App/HttpController/Index.php line:17]
+[2019-08-15 17:41:42][DEBUG][WARNING] : [Invalid argument supplied for foreach() at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php line:84]
+[2019-08-15 17:48:02][DEBUG][WARNING] : [Invalid argument supplied for foreach() at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php line:84]

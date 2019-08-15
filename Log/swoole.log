@@ -1,0 +1,86 @@
+[2019-08-15 14:52:13 $7537.0]	INFO	Server is reloading task workers now
+[2019-08-15 14:53:17 $7537.0]	INFO	Server is reloading task workers now
+[2019-08-15 14:53:35 #7536.2]	INFO	Server is shutdown now
+[2019-08-15 15:00:52 $7704.0]	INFO	Server is reloading task workers now
+[2019-08-15 15:01:04 $7704.0]	INFO	Server is reloading task workers now
+[2019-08-15 15:05:48 #7703.2]	INFO	Server is shutdown now
+[2019-08-15 15:07:15 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:21:00 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:21:13 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:21:37 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:21:43 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:21:57 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:22:09 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:22:11 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:36:21 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:36:26 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:36:29 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:36:35 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:36:40 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:36:42 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:36:50 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:36:57 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:37:52 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:38:48 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:39:40 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:40:35 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:40:43 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:41:07 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:41:12 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:43:30 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:43:33 *8727.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-08-15 15:43:54 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:46:51 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 15:46:54 *8773.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-08-15 16:21:44 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:22:09 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:41:29 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:41:31 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:41:40 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:43:34 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:49:28 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:49:34 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:49:38 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:50:07 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:50:10 *9470.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-08-15 16:50:18 $7940.0]	INFO	Server is reloading task workers now
+[2019-08-15 16:50:32 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:50:35 *9535.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-08-15 16:51:02 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:51:46 $7940.0]	INFO	Server is reloading task workers now
+[2019-08-15 16:52:59 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:53:34 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:53:37 *9626.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-08-15 16:53:39 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:53:42 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:55:13 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:55:18 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:55:27 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:55:49 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:56:33 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:58:42 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 16:58:45 *9763.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-08-15 17:00:42 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 17:00:45 *9784.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-08-15 17:02:40 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 17:02:43 *9838.3]	WARNING	swWorker_reactor_is_empty (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-08-15 17:07:12 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 17:08:10 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 17:11:28 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 17:15:33 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 17:15:58 $7940.0]	INFO	Server is reloading all workers now
+[2019-08-15 17:19:56 #7939.2]	INFO	Server is shutdown now
+[2019-08-15 17:19:56 @7959.0]	NOTICE	swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2019-08-15 17:36:01 $10377.0]	INFO	Server is reloading all workers now
+[2019-08-15 17:36:13 $10377.0]	INFO	Server is reloading all workers now
+[2019-08-15 17:37:07 $10377.0]	INFO	Server is reloading all workers now
+[2019-08-15 17:37:11 $10377.0]	INFO	Server is reloading all workers now
+[2019-08-15 17:37:55 $10377.0]	INFO	Server is reloading all workers now
+[2019-08-15 17:38:18 *10584.3]	ERROR	swoole_server_rshutdown (ERRNO 503): Fatal error: require(): Failed opening required '/mnt/hgfs/share/easyswoole/App/Config' (include_path='.:/usr/share/php') in /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Config.php on line 97
+[2019-08-15 17:38:18 $10570.0]	WARNING	swManager_check_exit_status: worker#3[pid=10584] abnormal exit, status=255, signal=0
+[2019-08-15 17:38:36 $10570.0]	INFO	Server is reloading all workers now
+[2019-08-15 17:40:54 $10642.0]	INFO	Server is reloading all workers now
+[2019-08-15 17:41:57 $10814.0]	INFO	Server is reloading all workers now
+[2019-08-15 17:42:11 $10814.0]	INFO	Server is reloading all workers now
+[2019-08-15 17:42:18 $10814.0]	INFO	Server is reloading all workers now
+[2019-08-15 17:48:14 $10930.0]	INFO	Server is reloading all workers now

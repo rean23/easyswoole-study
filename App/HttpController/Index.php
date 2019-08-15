@@ -18,7 +18,11 @@ class Index extends Base
         //file_put_contents('./aaa.log',Config::getInstance()->getConf('MYSQL.host'));
 
         $this->response()->write('hello world');
+        $conf = new \EasySwoole\Mysqli\Config(\EasySwoole\EasySwoole\Config::getInstance()->getConf('MYSQL'));
+        $db = new \EasySwoole\Mysqli\Mysqli($conf);
+        $data = $db->get('users');
 
+        //file_put_contents('./aaa.log',json_encode($data));
         // 异步任务
         /*TaskManager::async(function () {
             file_put_contents('./aaa.log','adsasdad');

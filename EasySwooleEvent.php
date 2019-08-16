@@ -23,7 +23,7 @@ use EasySwoole\RedisPool\Redis;
 class EasySwooleEvent implements Event
 {
 
-    const INIT_FUNCIONT_LIST = [
+    const INIT_FUNCTION_LIST = [
         'registerProcess' => [],//注册自定义进程
         'loadConf'        => [],// 加载配置
         'initDb'          => [],//初始化数据库配置
@@ -44,7 +44,7 @@ class EasySwooleEvent implements Event
         $swooleServer->addProcess((new HotReload('HotReload', ['disableInotify' => false]))->getProcess());
 
         //加载初始化函数
-        foreach (self::INIT_FUNCIONT_LIST as $function => $args) {
+        foreach (self::INIT_FUNCTION_LIST as $function => $args) {
             call_user_func_array(['self', $function], $args);
         }
     }

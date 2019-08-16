@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "18a68056da656a6d78f307e2b38ef0c2",
+    "content-hash": "1bc3e9f1869d8506f146e34feada2e6a",
     "packages": [
         {
             "name": "dragonmantank/cron-expression",
@@ -399,6 +399,59 @@
                 "swoole"
             ],
             "time": "2019-07-12T03:16:16+00:00"
+        },
+        {
+            "name": "easyswoole/redis-pool",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/easy-swoole/redis-pool.git",
+                "reference": "ceaba720d5d532e9fe29f182e85ebff2051c76b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/easy-swoole/redis-pool/zipball/ceaba720d5d532e9fe29f182e85ebff2051c76b1",
+                "reference": "ceaba720d5d532e9fe29f182e85ebff2051c76b1",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "easyswoole/component": "^1.5",
+                "easyswoole/spl": "^1.1"
+            },
+            "require-dev": {
+                "easyswoole/swoole-ide-helper": "^1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EasySwoole\\RedisPool\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "YF",
+                    "email": "291323003@qq.com"
+                }
+            ],
+            "description": "An efficient swoole framework",
+            "homepage": "https://www.easyswoole.com/",
+            "keywords": [
+                "async",
+                "easyswoole",
+                "framework",
+                "swoole"
+            ],
+            "time": "2019-08-08T17:44:32+00:00"
         },
         {
             "name": "easyswoole/spl",

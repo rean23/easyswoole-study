@@ -13,12 +13,21 @@ use EasySwoole\EasySwoole\Swoole\EventRegister;
 use EasySwoole\EasySwoole\AbstractInterface\Event;
 use EasySwoole\Http\Request;
 use EasySwoole\Http\Response;
-use EasySwoole\EasySwoole\Config;
+use EasySwoole\EasySwoole\Config as GConfig;
 use App\Process\HotReload;
 use App\Process\TestProcess;
 
+use EasySwoole\RedisPool\Config as RedisConfig;
+use EasySwoole\RedisPool\Redis;
+
 class EasySwooleEvent implements Event
 {
+
+    const INIT_FUNCIONT_LIST = [
+        'registerProcess' => [],//注册自定义进程
+        'loadConf'        => [],// 加载配置
+        'initDb'          => [],//初始化数据库配置
+    ];
 
     public static function initialize()
     {
@@ -34,11 +43,10 @@ class EasySwooleEvent implements Event
         $swooleServer = ServerManager::getInstance()->getSwooleServer();
         $swooleServer->addProcess((new HotReload('HotReload', ['disableInotify' => false]))->getProcess());
 
-        //注册自定义进程
-        self::registerProcess();
-
-        // 加载配置
-        self::loadConf();
+        //加载初始化函数
+        foreach (self::INIT_FUNCIONT_LIST as $function => $args) {
+            call_user_func_array(['self', $function], $args);
+        }
     }
 
     public static function onRequest(Request $request, Response $response): bool
@@ -62,9 +70,10 @@ class EasySwooleEvent implements Event
          */
         $processConfig = new \EasySwoole\Component\Process\Config;
 
-        //
-        $processConfig->setProcessName('testProcess');
+        //注册testProcess进程
+        /*$processConfig->setProcessName('testProcess');
         ServerManager::getInstance()->getSwooleServer()->addProcess((new TestProcess($processConfig))->getProcess());
+        */
     }
 
     /**
@@ -74,7 +83,7 @@ class EasySwooleEvent implements Event
     private static function loadConf()
     {
         // 获取Config类实例
-        $config = Config::getInstance();
+        $config = GConfig::getInstance();
 
         // 遍历目录
         $dir = EASYSWOOLE_ROOT . '/App/Config/';
@@ -88,5 +97,21 @@ class EasySwooleEvent implements Event
 
             $config->loadEnv($dir . $file);
         }
+    }
+
+    /**
+     * 初始化数据库连接
+     * @throws \EasySwoole\Component\Pool\Exception\PoolObjectNumError
+     * @throws \EasySwoole\RedisPool\RedisPoolException
+     */
+    private static function initDb()
+    {
+        // 加载redis配置
+        $configData = GConfig::getInstance()->getConf('REDIS');
+        $config     = new RedisConfig($configData);
+        $poolConf   = Redis::getInstance()->register('redis', $config);
+
+        $poolConf->setMaxObjectNum($configData['maxObjectNum']);
+        $poolConf->setMinObjectNum($configData['minObjectNum']);
     }
 }

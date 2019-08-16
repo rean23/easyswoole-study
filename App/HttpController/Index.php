@@ -29,7 +29,7 @@ class Index extends Base
         //TaskManager::async(\App\Task\TestTask::class);
 
         // 实例化任务模板类 并将数据带进去 可以在任务类$taskData参数拿到数据
-        $this->response()->withHeader('Content-type','text/html;charset=utf-8');
+        $this->response()->withHeader('Content-type', 'text/html;charset=utf-8');
 
         $taskClass = new TestTask();
         \EasySwoole\EasySwoole\Swoole\Task\TaskManager::async($taskClass);
@@ -46,7 +46,13 @@ class Index extends Base
 
     function test()
     {
-        $this->response()->write('this is test123');
+        $redis = $this->getRedisPool();
+
+        $redis->set('name', 'Rean');
+        $this->response()->withHeader('Content-type', 'text/html;charset=utf-8');
+        $this->response()->write($redis->get('name'));
+
+        //$this->response()->write('this is test123');
         //return '/test2';//当执行完test方法之后,返回/test2,让框架继续调度/test2方法
     }
 

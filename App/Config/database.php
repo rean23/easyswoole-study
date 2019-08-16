@@ -1,7 +1,7 @@
 <?php
 return [
+    //数据库配置
     'MYSQL' => [
-//数据库配置
         'host'                 => '127.0.0.1',//数据库连接ip
         'user'                 => '',//数据库用户名
         'password'             => '',//数据库密码
@@ -16,4 +16,13 @@ return [
         'isSubQuery'           => false,//是否为子查询
         'max_reconnect_times ' => '3',//最大重连次数
     ],
+    'REDIS' => [
+        'host'              => '127.0.0.1',
+        'port'              => '6379',
+        'auth'              => '',
+        'intervalCheckTime' => 30 * 1000,//定时验证对象是否可用以及保持最小连接的间隔时间
+        'maxIdleTime'       => 15,//最大存活时间,超出则会每$intervalCheckTime/1000秒被释放
+        'maxObjectNum'      => 20,//最大创建数量
+        'minObjectNum'      => 5,//最小创建数量 最小创建数量不能大于等于最大创建
+    ]
 ];

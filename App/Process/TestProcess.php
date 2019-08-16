@@ -50,6 +50,7 @@ class TestProcess extends AbstractProcess
         $this->workers[$pid] = $process;
     }
 
+    // 回收进程
     private function waitProcess()
     {
         while ($process = swoole_process::wait()) {

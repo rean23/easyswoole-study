@@ -29,6 +29,8 @@ class Index extends Base
         //TaskManager::async(\App\Task\TestTask::class);
 
         // 实例化任务模板类 并将数据带进去 可以在任务类$taskData参数拿到数据
+        $this->response()->withHeader('Content-type','text/html;charset=utf-8');
+
         $taskClass = new TestTask();
         \EasySwoole\EasySwoole\Swoole\Task\TaskManager::async($taskClass);
         $this->response()->write('执行模板异步任务成功');

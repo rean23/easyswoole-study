@@ -15,6 +15,7 @@ use EasySwoole\Http\Request;
 use EasySwoole\Http\Response;
 use EasySwoole\EasySwoole\Config;
 use App\Process\HotReload;
+use App\Process\TestProcess;
 
 class EasySwooleEvent implements Event
 {
@@ -29,6 +30,11 @@ class EasySwooleEvent implements Event
     {
         // TODO: Implement mainServerCreate() method.
 
+        // 启动热加载
+        $swooleServer = ServerManager::getInstance()->getSwooleServer();
+        $swooleServer->addProcess((new HotReload('HotReload', ['disableInotify' => false]))->getProcess());
+
+        //注册自定义进程
         self::registerProcess();
 
         // 加载配置
@@ -47,12 +53,18 @@ class EasySwooleEvent implements Event
     }
 
     /**
-     * 注册进程文件
+     * 注册自定义进程
      */
-    private static function registerProcess() {
-        // 启动热加载
-        $swooleServer = ServerManager::getInstance()->getSwooleServer();
-        $swooleServer->addProcess((new HotReload('HotReload', ['disableInotify' => false]))->getProcess());
+    private static function registerProcess()
+    {
+        /**
+         * 除了进程名，其余参数非必须
+         */
+        $processConfig = new \EasySwoole\Component\Process\Config;
+
+        //
+        $processConfig->setProcessName('testProcess');
+        ServerManager::getInstance()->getSwooleServer()->addProcess((new TestProcess($processConfig))->getProcess());
     }
 
     /**
@@ -65,7 +77,7 @@ class EasySwooleEvent implements Event
         $config = Config::getInstance();
 
         // 遍历目录
-        $dir   = EASYSWOOLE_ROOT . '/App/Config/';
+        $dir = EASYSWOOLE_ROOT . '/App/Config/';
 
         //循环加载文件
         $files = scandir($dir);

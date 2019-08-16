@@ -7,10 +7,12 @@ use EasySwoole\EasySwoole\Crontab\AbstractCronTask;
 use EasySwoole\EasySwoole\Config;
 use EasySwoole\EasySwoole\Swoole\Task\TaskManager;
 
+use App\Task\TestTask;
+
 class Index extends Base
 {
 
-    function index()
+    function task()
     {
         // TODO: Implement index() method.
 
@@ -24,7 +26,15 @@ class Index extends Base
 
         //file_put_contents('./aaa.log',json_encode($data));
         // 异步任务
-        TaskManager::async(new \App\Task\TestTask());
+        //TaskManager::async(\App\Task\TestTask::class);
+
+        // 实例化任务模板类 并将数据带进去 可以在任务类$taskData参数拿到数据
+        $taskClass = new TestTask();
+        \EasySwoole\EasySwoole\Swoole\Task\TaskManager::async($taskClass);
+        $this->response()->write('执行模板异步任务成功');
+        /*TaskManager::async(function () {
+            file_put_contents('./aaa.log',microtime(true));
+        });*/
 
         // 每隔 10 秒执行一次
         /*Timer::getInstance()->loop(10 * 1000, function () {

@@ -1,4 +1,4 @@
 /vendor/
-/Log/
-/Temp/
+/Log/*
+/Temp/*
 *.log

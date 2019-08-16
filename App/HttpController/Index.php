@@ -2,10 +2,10 @@
 
 namespace App\HttpController;
 
-use EasySwoole\EasySwoole\Swoole\Task\TaskManager;
 use EasySwoole\Component\Timer;
 use EasySwoole\EasySwoole\Crontab\AbstractCronTask;
 use EasySwoole\EasySwoole\Config;
+use EasySwoole\EasySwoole\Swoole\Task\TaskManager;
 
 class Index extends Base
 {
@@ -17,17 +17,15 @@ class Index extends Base
         //获取配置项
         //file_put_contents('./aaa.log',Config::getInstance()->getConf('MYSQL.host'));
 
-        $this->response()->write('hello world');
+        /*$this->response()->write('hello world');
         $conf = new \EasySwoole\Mysqli\Config(\EasySwoole\EasySwoole\Config::getInstance()->getConf('MYSQL'));
         $db = new \EasySwoole\Mysqli\Mysqli($conf);
-        $data = $db->get('users');
+        $data = $db->get('users');*/
 
         //file_put_contents('./aaa.log',json_encode($data));
         // 异步任务
-        /*TaskManager::async(function () {
-            file_put_contents('./aaa.log','adsasdad');
-            return true;
-        });*/
+        TaskManager::async(new \App\Task\TestTask());
+
         // 每隔 10 秒执行一次
         /*Timer::getInstance()->loop(10 * 1000, function () {
             file_put_contents('./aaa.log', microtime(true) . PHP_EOL, FILE_APPEND);

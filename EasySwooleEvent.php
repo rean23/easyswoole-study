@@ -13,8 +13,8 @@ use EasySwoole\EasySwoole\Swoole\EventRegister;
 use EasySwoole\EasySwoole\AbstractInterface\Event;
 use EasySwoole\Http\Request;
 use EasySwoole\Http\Response;
-use App\Process\HotReload;
 use EasySwoole\EasySwoole\Config;
+use App\Process\HotReload;
 
 class EasySwooleEvent implements Event
 {
@@ -29,10 +29,7 @@ class EasySwooleEvent implements Event
     {
         // TODO: Implement mainServerCreate() method.
 
-        // 启动热加载
-        $swooleServer = ServerManager::getInstance()->getSwooleServer();
-        $swooleServer->addProcess((new HotReload('HotReload', ['disableInotify' => false]))->getProcess());
-
+        self::registerProcess();
 
         // 加载配置
         self::loadConf();
@@ -49,6 +46,19 @@ class EasySwooleEvent implements Event
         // TODO: Implement afterAction() method.
     }
 
+    /**
+     * 注册进程文件
+     */
+    private static function registerProcess() {
+        // 启动热加载
+        $swooleServer = ServerManager::getInstance()->getSwooleServer();
+        $swooleServer->addProcess((new HotReload('HotReload', ['disableInotify' => false]))->getProcess());
+    }
+
+    /**
+     * 加载配置文件
+     * @throws \Exception
+     */
     private static function loadConf()
     {
         // 获取Config类实例

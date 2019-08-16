@@ -126,3 +126,27 @@ Stack trace:
 [2019-08-15 17:41:13][DEBUG][ERROR] : [Call to a member function getConf() on null at file:/mnt/hgfs/share/easyswoole/App/HttpController/Index.php line:17]
 [2019-08-15 17:41:42][DEBUG][WARNING] : [Invalid argument supplied for foreach() at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php line:84]
 [2019-08-15 17:48:02][DEBUG][WARNING] : [Invalid argument supplied for foreach() at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php line:84]
+[2019-08-15 18:35:50][DEBUG][WARNING] : [Invalid argument supplied for foreach() at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php line:84]
+[2019-08-15 19:34:03][DEBUG][WARNING] : [Invalid argument supplied for foreach() at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php line:84]
+[2019-08-16 09:45:49][DEBUG][WARNING] : [Invalid argument supplied for foreach() at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php line:84]
+[2019-08-16 09:46:01][DEBUG][ERROR] : [connect to @127.0.0.1 at port  fail: 2002 SQLSTATE[HY000] [2002]  at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/mysqli/src/Mysqli.php line:119]
+[2019-08-16 09:50:23][DEBUG][WARNING] : [Invalid argument supplied for foreach() at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php line:84]
+[2019-08-16 09:50:25][DEBUG][ERROR] : [Interface 'EasySwoole\Task\AbstractInterface\TaskInterface' not found at file:/mnt/hgfs/share/easyswoole/App/Task/TestTask.php line:8]
+[2019-08-16 09:53:58][DEBUG][ERROR] : [Uncaught Swoole\Exception: failed to listen server port[0.0.0.0:9501], Error: Address already in use[98] in /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php:57
+Stack trace:
+#0 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(57): Swoole\Server->__construct('0.0.0.0', 9501, 2, 1)
+#1 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(115): EasySwoole\EasySwoole\ServerManager->createSwooleServer(9501, 2, '0.0.0.0', Array, 2, 1)
+#2 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /mnt/hgfs/share/easyswoole/easyswoole(24): EasyS at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php line:57]
+[2019-08-16 09:54:06][DEBUG][WARNING] : [Invalid argument supplied for foreach() at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php line:84]
+[2019-08-16 09:54:14][DEBUG][ERROR] : [Call to undefined method EasySwoole\EasySwoole\Swoole\Task\TaskManager::getInstance() at file:/mnt/hgfs/share/easyswoole/App/HttpController/Index.php line:27]
+[2019-08-16 09:58:46][DEBUG][WARNING] : [Invalid argument supplied for foreach() at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php line:84]
+[2019-08-16 09:59:18][DEBUG][WARNING] : [Invalid argument supplied for foreach() at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php line:84]
+[2019-08-16 10:00:23][DEBUG][WARNING] : [Invalid argument supplied for foreach() at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php line:84]
+[2019-08-16 10:00:25][DEBUG][ERROR] : [Call to undefined method EasySwoole\EasySwoole\Swoole\Task\TaskManager::getInstance() at file:/mnt/hgfs/share/easyswoole/App/HttpController/Index.php line:27]
+[2019-08-16 10:02:20][DEBUG][WARNING] : [Invalid argument supplied for foreach() at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php line:84]
+[2019-08-16 10:04:10][DEBUG][WARNING] : [Invalid argument supplied for foreach() at file:/mnt/hgfs/share/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php line:84]
+[2019-08-16 10:10:11][DEBUG][ERROR] : [Undefined constant 'EasySwoole\EasySwoole\Task\TaskManager' at file:/mnt/hgfs/share/easyswoole/App/HttpController/Index.php line:29]
+[2019-08-16 10:12:21][DEBUG][ERROR] : [Call to undefined method EasySwoole\EasySwoole\Swoole\Task\TaskManager::getInstance() at file:/mnt/hgfs/share/easyswoole/App/HttpController/Index.php line:27]

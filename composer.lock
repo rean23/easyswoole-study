@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bfa4937678a996249a83e3ba6f45cde1",
+    "content-hash": "18a68056da656a6d78f307e2b38ef0c2",
     "packages": [
         {
             "name": "dragonmantank/cron-expression",
@@ -486,6 +486,50 @@
             ],
             "description": "swoole-ide-helper",
             "time": "2019-07-02T03:19:42+00:00"
+        },
+        {
+            "name": "easyswoole/task",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/easy-swoole/task.git",
+                "reference": "7c722ffdea56d4d37433099539584b50338ab3de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/easy-swoole/task/zipball/7c722ffdea56d4d37433099539584b50338ab3de",
+                "reference": "7c722ffdea56d4d37433099539584b50338ab3de",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "easyswoole/component": "^1.6",
+                "easyswoole/spl": "^1.2",
+                "ext-swoole": ">=4.4.0"
+            },
+            "require-dev": {
+                "easyswoole/swoole-ide-helper": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EasySwoole\\Task\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "A simple Queue implementation integrated into easySwoole",
+            "keywords": [
+                "easyswoole"
+            ],
+            "time": "2019-08-15T04:52:17+00:00"
         },
         {
             "name": "easyswoole/trigger",

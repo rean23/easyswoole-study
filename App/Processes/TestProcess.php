@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Process;
+namespace App\Processes;
 
 use EasySwoole\Component\Process\AbstractProcess;
 use EasySwoole\EasySwoole\Logger;

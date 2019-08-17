@@ -6,7 +6,7 @@
  * Time: 23:18
  */
 
-namespace App\Process;
+namespace App\Processes;
 
 use EasySwoole\Component\Process\AbstractProcess;
 use EasySwoole\EasySwoole\ServerManager;

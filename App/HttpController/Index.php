@@ -7,7 +7,8 @@ use EasySwoole\EasySwoole\Crontab\AbstractCronTask;
 use EasySwoole\EasySwoole\Config;
 use EasySwoole\EasySwoole\Swoole\Task\TaskManager;
 
-use App\Task\TestTask;
+use App\Tasks\TestTask;
+use App\Models\Model;
 
 class Index extends Base
 {
@@ -26,8 +27,8 @@ class Index extends Base
 
         //file_put_contents('./aaa.log',json_encode($data));
         // 异步任务
-        //TaskManager::async(\App\Task\TestTask::class);
-
+        //TaskManager::async(\App\Tasks\TestTask::class);
+        Model::getPool();
         // 实例化任务模板类 并将数据带进去 可以在任务类$taskData参数拿到数据
         $this->response()->withHeader('Content-type', 'text/html;charset=utf-8');
 

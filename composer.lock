@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1bc3e9f1869d8506f146e34feada2e6a",
+    "content-hash": "3b5284b056cb6af232cb5fbb09470654",
     "packages": [
         {
             "name": "dragonmantank/cron-expression",
@@ -399,6 +399,61 @@
                 "swoole"
             ],
             "time": "2019-07-12T03:16:16+00:00"
+        },
+        {
+            "name": "easyswoole/mysqli-pool",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/easy-swoole/mysqli-pool.git",
+                "reference": "6bb1a92703ee796c0dc7fd907fdff5f261db66f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/easy-swoole/mysqli-pool/zipball/6bb1a92703ee796c0dc7fd907fdff5f261db66f6",
+                "reference": "6bb1a92703ee796c0dc7fd907fdff5f261db66f6",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "easyswoole/component": "^1.5",
+                "easyswoole/mysqli": "^1.1"
+            },
+            "require-dev": {
+                "easyswoole/phpunit": "^1.0",
+                "easyswoole/swoole-ide-helper": "^1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EasySwoole\\MysqliPool\\": "src/",
+                    "EasySwoole\\MysqliPool\\Test\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "YF",
+                    "email": "291323003@qq.com"
+                }
+            ],
+            "description": "An efficient swoole framework",
+            "homepage": "https://www.easyswoole.com/",
+            "keywords": [
+                "async",
+                "easyswoole",
+                "framework",
+                "swoole"
+            ],
+            "time": "2019-08-09T03:44:56+00:00"
         },
         {
             "name": "easyswoole/redis-pool",

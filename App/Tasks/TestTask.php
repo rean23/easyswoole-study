@@ -3,7 +3,7 @@
  * 测试任务类
  */
 
-namespace App\Task;
+namespace App\Tasks;
 
 use EasySwoole\EasySwoole\Swoole\Task\AbstractAsyncTask;
 

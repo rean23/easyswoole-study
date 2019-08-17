@@ -4,7 +4,7 @@
  */
 
 namespace App\Models;
-
+use EasySwoole\MysqliPool\Mysql;
 
 abstract class Model
 {
@@ -12,9 +12,13 @@ abstract class Model
     protected $connection;//连接名
 
     public static function getPool() {
-        $db = \EasySwoole\MysqliPool\Mysql::getInstance()->pool('mysql')::defer();
-        var_dump($db->rawQuery('select version()'));
-        $db = \EasySwoole\MysqliPool\Mysql::defer('mysql');
-        var_dump($db->rawQuery('select version()'));
+        $db = Mysql::getInstance()->pool('mysql')::defer();
+        /*var_dump($db->rawQuery('select version()'));
+        $db = Mysql::defer('mysql');
+        var_dump($db->rawQuery('select version()'));*/
+
+        $data = $db->getOne('users','name');
+
+        var_dump($data);
     }
 }

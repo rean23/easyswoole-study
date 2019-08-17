@@ -48,7 +48,9 @@ class EasySwooleEvent implements Event
 
         //加载初始化函数
         foreach (self::INIT_FUNCTION_LIST as $function => $args) {
-            if (method_exists(self, $function)) {
+            //如果方法存在
+            if (method_exists(__CLASS__, $function)) {
+                // 调用方法
                 call_user_func_array(['self', $function], $args);
             }
         }
@@ -115,15 +117,17 @@ class EasySwooleEvent implements Event
         $configData = GConfig::getInstance()->getConf();
 
         // 连接redis
-        $config   = new RedisConfig($configData['REDIS']);
+        $redisConfig = $configData['REDIS'];
+        $config   = new RedisConfig($redisConfig);
         $poolConf = Redis::getInstance()->register('redis', $config);
-        $poolConf->setMaxObjectNum($configData['maxObjectNum']);
-        $poolConf->setMinObjectNum($configData['minObjectNum']);
+        $poolConf->setMaxObjectNum($redisConfig['maxObjectNum']);
+        $poolConf->setMinObjectNum($redisConfig['minObjectNum']);
 
         // 连接mysql
-        $config     = new MysqliConfig($configData['MYSQL']);
-        $poolConf   = Mysql::getInstance()->register('mysql', $config);
-        $poolConf->setMaxObjectNum($configData['maxObjectNum']);
-        $poolConf->setMinObjectNum($configData['minObjectNum']);
+        $mysqlConfig = $configData['MYSQL'];
+        $config   = new MysqliConfig($mysqlConfig);
+        $poolConf = Mysql::getInstance()->register('mysql', $config);
+        /*$poolConf->setMaxObjectNum($mysqlConfig['maxObjectNum']);
+        $poolConf->setMinObjectNum($mysqlConfig['minObjectNum']);*/
     }
 }

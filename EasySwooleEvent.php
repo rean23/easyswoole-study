@@ -17,11 +17,11 @@ use EasySwoole\EasySwoole\Config as GConfig;
 use App\Processes\HotReload;
 use App\Processes\TestProcess;
 
-use EasySwoole\RedisPool\Config as RedisConfig;
-use EasySwoole\Mysqli\Config as MysqliConfig;
-
-use EasySwoole\RedisPool\Redis;
-use EasySwoole\MysqliPool\Mysql;
+use EasySwoole\Component\Pool\PoolManager;
+use App\Utility\Pool\{
+    MysqlPool,
+    RedisPool
+};
 
 class EasySwooleEvent implements Event
 {
@@ -29,7 +29,7 @@ class EasySwooleEvent implements Event
     const INIT_FUNCTION_LIST = [
         'registerProcess' => [],//注册自定义进程
         'loadConf'        => [],// 加载配置
-        'loadDB'          => [],//初始化数据库配置
+        'registerPool'    => [],//注册连接池
     ];
 
     public static function initialize()
@@ -84,6 +84,18 @@ class EasySwooleEvent implements Event
     }
 
     /**
+     * 注册连接池
+     * @throws \EasySwoole\Component\Pool\Exception\PoolException
+     */
+    private static function registerPool()
+    {
+        $poolManager = PoolManager::getInstance();// 获取连接池管理器对象
+
+        $poolManager->register(MysqlPool::class);// 注册mysql连接池对象
+        $poolManager->register(RedisPool::class);// 注册redis连接池对象
+    }
+
+    /**
      * 加载配置文件
      * @throws \Exception
      */
@@ -104,30 +116,5 @@ class EasySwooleEvent implements Event
 
             $config->loadEnv($dir . $file);
         }
-    }
-
-    /**
-     * 初始化数据库连接
-     * @throws \EasySwoole\Component\Pool\Exception\PoolObjectNumError
-     * @throws \EasySwoole\RedisPool\RedisPoolException
-     */
-    private static function loadDB()
-    {
-        //加载配置
-        $configData = GConfig::getInstance()->getConf();
-
-        // 连接redis
-        $redisConfig = $configData['REDIS'];
-        $config   = new RedisConfig($redisConfig);
-        $poolConf = Redis::getInstance()->register('redis', $config);
-        $poolConf->setMaxObjectNum($redisConfig['maxObjectNum']);
-        $poolConf->setMinObjectNum($redisConfig['minObjectNum']);
-
-        // 连接mysql
-        $mysqlConfig = $configData['MYSQL'];
-        $config   = new MysqliConfig($mysqlConfig);
-        $poolConf = Mysql::getInstance()->register('mysql', $config);
-        /*$poolConf->setMaxObjectNum($mysqlConfig['maxObjectNum']);
-        $poolConf->setMinObjectNum($mysqlConfig['minObjectNum']);*/
     }
 }

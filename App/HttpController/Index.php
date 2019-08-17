@@ -28,7 +28,10 @@ class Index extends Base
         //file_put_contents('./aaa.log',json_encode($data));
         // 异步任务
         //TaskManager::async(\App\Tasks\TestTask::class);
-        Model::getPool();
+        /*$redis = \App\Utility\Pool\RedisPool::defer();
+        $redis->set('name','hanyu');
+        var_dump($redis->get('name'));*/
+        //(new \App\Repositories\UserRepository)->test();
         // 实例化任务模板类 并将数据带进去 可以在任务类$taskData参数拿到数据
         $this->response()->withHeader('Content-type', 'text/html;charset=utf-8');
 

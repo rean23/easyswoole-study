@@ -14,7 +14,7 @@ class Base extends Controller
 
     public function index()
     {
-        $this->actionNotFound();
+
     }
 
     /**
@@ -29,5 +29,18 @@ class Base extends Controller
         }
 
         return $this->redis;
+    }
+
+    /**
+     * 获取配置信息
+     * @param string $key
+     * @return array|mixed|null
+     */
+    protected function getConfig($key = '')
+    {
+        $instance = Config::getInstance();
+
+        // 获取全部配置
+        return $instance->getConf($key);
     }
 }

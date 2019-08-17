@@ -68,10 +68,10 @@ class EasySwooleEvent implements Event
         /**
          * 除了进程名，其余参数非必须
          */
-        $processConfig = new \EasySwoole\Component\Process\Config;
+        /*$processConfig = new \EasySwoole\Component\Process\Config;
 
         //注册testProcess进程
-        /*$processConfig->setProcessName('testProcess');
+        $processConfig->setProcessName('testProcess');
         ServerManager::getInstance()->getSwooleServer()->addProcess((new TestProcess($processConfig))->getProcess());
         */
     }
